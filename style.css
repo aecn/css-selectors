@@ -1,0 +1,100 @@
+body {
+  background-color:#171738;
+  margin: 0px;
+  padding: 0px;
+}
+.circleContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+nav {
+  background-color: #d8bbff;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  color: #ed254e;
+}
+* {
+  font-family:Fredoka One, sans-serif;
+}
+.circle {
+  background: #f9dc5c;
+  width: 80vmin;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+.circle::after { /*match the height*/
+  content: "";
+  padding-bottom: 100%;
+}
+.circleText {
+  font-size: 15vmin;
+  position: absolute;
+  bottom: 50%;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: #e5383b;
+}
+a:hover {
+  color: #ad2831;
+}
+a:active {
+  color: #F26419;
+}
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  margin-bottom: 50px;
+}
+.box1 {
+  background-color: #e0aaff;
+  width: 50vmin;
+  padding: 20px;
+}
+.box2 {
+  background-color: #c77dff;
+  width: 50vmin;
+  padding: 20px;
+}
+.box3 {
+  background-color: #9d4edd;
+  width: 50vmin;
+  padding: 20px;
+}
+h2, p { /*text inside boxes are all centered*/
+  text-align: center;
+  line-height: 35px;
+}
+.boxes .box1 p { /*box1 paragraph color*/
+  color: #944bbb;
+}
+.box1 h2 { /*box1 heading color*/
+  color: #240046;
+}
+.box2 > h2 { /*box2 heading color*/
+  color: #000;
+}
+.box2 > p { /*box2 paragraph color*/
+  color: #000;
+}
+.box3 h2, p { /*box3 heading and paragraph color*/
+  color: #e0aaff;
+}
+h2::first-letter { /*first letter of each heading is 2x bigger*/
+  font-size: 200%;
+}
+.boxes p::first-line {
+  text-decoration: underline;
+}
+img {
+  display: flex;
+  justify-content: flex-start;
+}
